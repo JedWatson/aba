@@ -1,0 +1,29 @@
+{
+  "name": "aba",
+  "version": "1.0.0",
+  "description": "Generator for creating Australian Bank Payment Files (ABA / Cemtex / Australian Bankers Association)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JedWatson/aba.git"
+  },
+  "keywords": [
+    "aba",
+    "australian",
+    "bank",
+    "bankers",
+    "bulk",
+    "cemtex",
+    "generator",
+    "payments"
+  ],
+  "author": "Jed Watson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JedWatson/aba/issues"
+  },
+  "homepage": "https://github.com/JedWatson/aba#readme"
+}
