@@ -1,9 +1,16 @@
+var parseRecord = require('./lib/parseRecord');
+
 function ABA () {
 
 	var descriptor = { text: '', data: null };
 	var records = [];
-	var totals = {};
-	var _needsRecalc = true;
+	var totals = {
+		net: 0.0,
+		credit: 0,
+		debit: 0,
+		count: 0
+	};
+	var _dirty = true;
 
 	this.describe = function (data) {
 		this.descriptor.data = data;
@@ -11,11 +18,8 @@ function ABA () {
 	};
 
 	function addRecord (data) {
-		records.push({
-			text: '',
-			data: data
-		});
-		_needsRecalc = true;
+		records.push(parseRecord(data));
+		_dirty = true;
 	}
 
 	this.add = function () {
