@@ -1,3 +1,11 @@
+# Deprecation Notice
+
+This repository contains work that was unfinished, and this code is not the same as the published `aba` package on npm.
+
+I recommend using [aba-generator](https://www.npmjs.com/package/aba-generator) by @koresar, the source for which is at [koresar/aba-generator](https://github.com/koresar/aba-generator).
+
+---
+
 # ABA Generator
 
 Creates Australian Bank Payment Files (ABA / Cemtex / Australian Bankers Association format).
